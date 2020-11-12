@@ -9,6 +9,10 @@ body{
     margin-top: 30px;
 }
 
+#content{
+    
+}
+
 /* Start Profile Section */
 
     #profile{
@@ -161,12 +165,16 @@ body{
     }
 
     .tabs{
-        height: 117px;
+        height: 116px;
         position: absolute;
         margin-top: -14px;
         z-index: 100;
     }
 
+    .tabs li{
+        float: left;
+        height: 116px;
+    }
     .tabs li > a{
         padding-top: 28px;
         width: 115px;
@@ -180,14 +188,38 @@ body{
         font-family: 'Roboto Condensed', sans-serif;
         line-height: 35px;
         text-decoration: none;
+        margin-right: 35px;
     }
 
     .tabs li.active{
         background: url(../images/tab-hover.png) no-repeat;
     }
-
+    
     .tabs li.active a{
         color: #cf455c;
+    }
+
+    a.tab-profile.active i:hover{
+        animation: bounce 2s ease-in-out;
+    }
+
+    @keyframes bounce{
+        0%, 20%, 40%, 80%, 100%{
+            transform: translateY(0);
+        }
+
+        10%{
+            transform: translateY(0);
+        }
+
+        30%{
+            transform: translateY(-20px);
+        }
+
+        50%{
+            transform: translateY(-5px);
+        }
+
     }
 
     .tabs li > a > i{
@@ -195,6 +227,8 @@ body{
         display: block;
         margin-bottom: 5px;
     }
+
+
 
 /* End Menu */
 
