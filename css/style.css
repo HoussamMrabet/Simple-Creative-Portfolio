@@ -2,12 +2,6 @@ body{
     background-image: url(../images/bg-body.jpg);
 }
 
-
-header{
-    position: relative;
-
-}
-
 /* Start Profile Section */
 
     #profile{
@@ -106,3 +100,51 @@ header{
     }
 
 /* End Profile Section */
+
+/* Start Share Icon */
+
+    header{
+        position: relative;
+        overflow: visible;
+    }
+
+    span.socials-text{
+        position: absolute;
+        right: 0;
+        color: #FFF;
+        padding: 2px 9px;
+        font-size: 22px;
+        cursor: pointer;
+        top: 10px;
+        border-radius: 70px;
+    }
+
+    ul.socialicons{
+        opacity: 0;
+        top: -1px;
+        position: relative;
+        transition: all ease 1s;
+        z-index: -1;
+        left: -7px;
+    }
+
+    .pulse-button{
+        position: relative;
+        width: 35px;
+        height: 35px;
+        line-height: 15px;
+        border: none;
+        box-shadow: 0 0 0 0 rgb(101, 100, 100);
+        background-color: #cf455c;
+        cursor: pointer;
+        color: #FFF;
+        font-size: 20px;
+    }
+
+/* End Share Icon */
+
+/* Start Menu */
+
+
+
+/* End Menu */
