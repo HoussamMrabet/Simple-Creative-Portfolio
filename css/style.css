@@ -2,57 +2,107 @@ body{
     background-image: url(../images/bg-body.jpg);
 }
 
-#profile{
-    background: #cf455c;
-    background-image: url(../images/header-shadow.png);
-    background-position: center bottom;
-    background-repeat: repeat-x;
-    overflow: hidden;
+
+header{
+    position: relative;
+
 }
 
-.about{
-    float: left;
-    margin-top: 30px;
-    margin-left: 20px;
-    width: 490px;
-}
+/* Start Profile Section */
 
-.about .photo-inner{
-    float: left;
-    background: url(../images/photo-inner.png) no-repeat;
-    width: 214px;
-    height: 214px;
-    padding: 12px 0 0 19px;
-}
+    #profile{
+        background: #cf455c;
+        background-image: url(../images/header-shadow.png);
+        background-position: center bottom;
+        background-repeat: repeat-x;
+        overflow: hidden;
+    }
 
-.about .photo-inner img {
-	background-color: #FFF;
-}
+    .about{
+        float: left;
+        margin-top: 30px;
+        margin-left: 20px;
+        width: 490px;
+    }
 
-.about h1 {
-	font-weight: 900;
-	color: #FFF;
-	line-height: 34px;
-	margin-top: 8px;
-}
+    .about .photo-inner{
+        float: left;
+        background: url(../images/photo-inner.png) no-repeat;
+        width: 214px;
+        height: 214px;
+        padding: 12px 0 0 19px;
+    }
 
-.about h3 {
-	margin-top: 5px;
-	font-size: 18px;
-	color: #FFF;
-	line-height: 18px;
-    font-family: 'Roboto Condensed', sans-serif;
-}
+    .about .photo-inner img {
+        background-color: #FFF;
+    }
 
-h3.main-heading .now{
-    background: #cf455c !important;
-}
+    .about h1 {
+        font-weight: 900;
+        color: #FFF;
+        line-height: 34px;
+        margin-top: 8px;
+        margin-left: -20px;
+    }
 
-.about p {
-	font-size: 14px;
-	margin-top: 15px;
-	color:#fff;
-	font-weight: 400;
-	line-height: 24px;
-    font-family: 'Roboto Condensed', sans-serif;
-}
+    .about h3 {
+        margin-top: 5px;
+        font-size: 18px;
+        color: #FFF;
+        line-height: 18px;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    /*h3.main-heading .now{
+        background: #cf455c !important;
+    }*/
+
+    .about p {
+        font-size: 14px;
+        margin-top: 15px;
+        color:#fff;
+        font-weight: 400;
+        line-height: 24px;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .personal-info{
+        float: left;
+        margin-top: 30px;
+        width: 310px;
+        min-height: 230px;
+        margin-left: 10px;
+        background: url(../images/personal-info-sep.png) no-repeat left top;
+        padding: 20px 0 19px 20px;
+    }
+
+    .personal-info li{
+        line-height: 12px;
+        font-size: 14px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        float: left;
+        width: 293px;
+    }
+
+    .personal-info li label{
+        color: #FFF;
+        float: left;
+        padding: 4px 7px;
+        font-weight: 550;
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .personal-info li span{
+        float: right;
+        width: 220px;
+        padding-top: 4px;
+        font-weight: 400;
+        color: #FFF;
+        font-family: 'Roboto Condensed', sans-serif;
+        text-transform: uppercase;
+    }
+
+/* End Profile Section */
