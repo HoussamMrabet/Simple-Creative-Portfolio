@@ -2,6 +2,13 @@ body{
     background-image: url(../images/bg-body.jpg);
 }
 
+#container{
+    margin: 0 auto;
+    width: 860px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
 /* Start Profile Section */
 
     #profile{
@@ -191,17 +198,21 @@ body{
 
 /* End Menu */
 
-#logo{
-    float: left;
-    overflow: hidden;
-    margin-left: 10px;
-    display: none;
-}
+/* Start Profil Picture */
 
-#logo h4{
-    color: #555;
-    line-height: 20px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    margin-left: 7px;
-}
+    #logo{
+        float: left;
+        overflow: hidden;
+        margin-left: 10px;
+        display: none;
+    }
+
+    #logo h4{
+        color: #555;
+        line-height: 20px;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        margin-left: 7px;
+    }
+
+/* End Profil Picture */
