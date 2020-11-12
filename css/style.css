@@ -1,0 +1,58 @@
+body{
+    background-image: url(../images/bg-body.jpg);
+}
+
+#profile{
+    background: #cf455c;
+    background-image: url(../images/header-shadow.png);
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    overflow: hidden;
+}
+
+.about{
+    float: left;
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 490px;
+}
+
+.about .photo-inner{
+    float: left;
+    background: url(../images/photo-inner.png) no-repeat;
+    width: 214px;
+    height: 214px;
+    padding: 12px 0 0 19px;
+}
+
+.about .photo-inner img {
+	background-color: #FFF;
+}
+
+.about h1 {
+	font-weight: 900;
+	color: #FFF;
+	line-height: 34px;
+	margin-top: 8px;
+}
+
+.about h3 {
+	margin-top: 5px;
+	font-size: 18px;
+	color: #FFF;
+	line-height: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h3.main-heading .now{
+    background: #cf455c !important;
+}
+
+.about p {
+	font-size: 14px;
+	margin-top: 15px;
+	color:#fff;
+	font-weight: 400;
+	line-height: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
