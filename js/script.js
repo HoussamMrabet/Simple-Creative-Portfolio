@@ -40,8 +40,8 @@ jQuery(document).ready(function(){
 
     $(".setting-icon").click(function(){
         $(".color-box").toggleClass("main");
-    });
-
+	});
+	
 	/* ---------------------------------------------------------------------- */
 	/*	Menu
 	/* ---------------------------------------------------------------------- */
@@ -69,4 +69,50 @@ jQuery(document).ready(function(){
 			$(this).stop().animate({ marginTop: "0px" }, 300);
 		}
     );
+
+	/* ---------------------------------------------------------------------- */
+	/*	Cats Filter
+	/* ---------------------------------------------------------------------- */ 
+	
+	var $catsfilter = $('.cats-filter');
+
+	// Copy categories to item classes
+	$catsfilter.find('a').click(function() {
+		var currentOption = $(this).attr('data-filter');
+		$(this).parent().parent().find('a').removeClass('current');
+		$(this).addClass('current');
+	});	
+
+	/* ---------------------------------------------------------------------- */
+	/*	Portfolio
+	/* ---------------------------------------------------------------------- */ 
+	
+	// Needed variables
+	var $plist = $('#portfolio-list');
+	var $pfilter = $('#portfolio-filter');
+		
+	// Run Isotope  
+	$plist.isotope({
+		filter : '*',
+		layoutMode : 'masonry',
+		animationOptions : {
+		duration : 750,
+		easing : 'linear'
+	   }
+	});	
+	
+	// Isotope Filter 
+	$pfilter.find('a').click(function(){
+	  	var selector = $(this).attr('data-filter');
+		$plist.isotope({ 
+			filter : selector,
+			animationOptions :{
+				duration : 750,
+				easing : 'linear',
+				queue : false,
+			}
+		});
+		return false;
+	});	 
+
 });

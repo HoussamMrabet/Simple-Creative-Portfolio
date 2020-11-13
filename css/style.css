@@ -17,6 +17,10 @@ a, a:hover{
     background-color: #FFF;
 }
 
+.transition {
+	transition: all .5s ease;
+}
+
 /* Start Profile Section */
 
     #profile{
@@ -326,6 +330,11 @@ a, a:hover{
         border-radius: 50px;
     }
 
+    .cats-filter li a:hover {
+        background-color:#cf455c;
+        text-decoration: none;
+    }
+
     .cats-filter li a.current{
         background-color: #CF455C;
     }
@@ -338,3 +347,37 @@ a, a:hover{
     }
 
 /* End Portfolio */
+
+/*-------------------------------------------------------*/
+
+/* Start Isotope filtering */
+
+/*-------------------------------------------------------*/
+.isotope-item {
+	z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+	pointer-events: none;
+	z-index: 1;
+}
+
+.isotope, .isotope .isotope-item {
+
+	/* change duration value to whatever you like */
+	transition-duration: 0.8s;
+}
+
+.isotope {
+	transition-property: height, width;
+}
+
+.isotope .isotope-item {
+	transition-property: transform, opacity;
+}
+/*-------------------------------------------------------*/
+
+/* End Isotope filtering */
+
+/*-------------------------------------------------------*/
+
