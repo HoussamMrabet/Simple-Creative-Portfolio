@@ -17,7 +17,30 @@ jQuery(document).ready(function(){
 	// Hide logo
 	$('.tab-profile').click(function() {
 	  $logo.fadeOut('slow');
-	});	
+    });	
+    
+
+    // The Portfolio Themes
+    
+    $('#yellow-color').click(function(e){
+        $(".main-wrapper-resume").attr("id", "yellow");
+    });
+
+    $('#green-color').click(function(e){
+        $(".main-wrapper-resume").attr("id", "green");
+    });
+
+    $('#blue-color').click(function(e){
+        $(".main-wrapper-resume").attr("id", "blue");
+    });
+
+    $('#red-color').click(function(e){
+        $(".main-wrapper-resume").attr("id", "red");
+    });
+
+    $(".setting-icon").click(function(){
+        $(".color-box").toggleClass("main");
+    });
 
 	/* ---------------------------------------------------------------------- */
 	/*	Menu
