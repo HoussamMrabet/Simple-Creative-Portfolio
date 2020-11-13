@@ -41,7 +41,11 @@ jQuery(document).ready(function(){
     $(".setting-icon").click(function(){
         $(".color-box").toggleClass("main");
 	});
-	
+
+	$(".socials-text").click(function(){
+	  $(".socialicons").toggleClass("main");
+	});
+ 
 	/* ---------------------------------------------------------------------- */
 	/*	Menu
 	/* ---------------------------------------------------------------------- */
